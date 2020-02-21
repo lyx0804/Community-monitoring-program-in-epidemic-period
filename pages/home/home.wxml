@@ -1,0 +1,78 @@
+<!--pages/home/home.wxml-->
+<view class='notice-wrap' hidden='{{hideNotice}}'>
+
+  <view class='tongzhitext'>
+
+    <text class="tongzhi-text">{{notice}}</text>
+  </view>
+
+  <view bindtap='switchNotice' class="closeView">x</view>
+
+</view>
+
+<view>
+  <text class="communitySet">{{community}}</text>
+  <button class="communityChoose" size="mini" bindtap="gotoPage_choose">社区选择</button>
+</view>
+
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">{{message1}}</view>
+    <view class="weui-cell__ft">说明文字</view>
+  </view>
+</view>
+<view class="div_line"></view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">{{message2}}</view>
+    <view class="weui-cell__ft">说明文字</view>
+  </view>
+</view>
+<view class="div_line"></view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">{{message3}}</view>
+    <view class="weui-cell__ft">说明文字</view>
+  </view>
+</view>
+
+<view class="page__bd">
+  <view class="weui-grids">
+    <view>
+      <navigator url="/pages/checkin/checkin" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/assets/image/setting.png" />
+        <view class="weui-grid__label">来访登记</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator url="/pages/symptom/symptom" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/assets/image/setting.png" />
+        <view class="weui-grid__label">症狀上报</view>
+      </navigator>
+    </view>
+
+    <view>
+      <navigator url="/pages/trends/trends" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/assets/image/setting.png" />
+        <view class="weui-grid__label">社区动态</view>
+      </navigator>
+    </view>
+    <navigator url="/pages/report/report" class="weui-grid" hover-class="weui-grid_active">
+      <image class="weui-grid__icon" src="/assets/image/setting.png" />
+      <view class="weui-grid__label">疫情上报</view>
+    </navigator>
+    <view>
+      <navigator url="/pages/route/route" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/assets/image/setting.png" />
+        <view class="weui-grid__label">路线记录</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator url="/pages/certificates/certificates" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/assets/image/setting.png" />
+        <view class="weui-grid__label">出入凭证</view>
+      </navigator>
+    </view>
+
+  </view>
+</view>
